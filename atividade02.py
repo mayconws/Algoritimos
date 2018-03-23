@@ -64,7 +64,20 @@
 
 # 8.Construa um programa que recebe três valores, A, B e C. Em seguida, apresente na tela somente o maior deles.
 
-a = int(input("Digite um valor para A:"))
-b = int(input("Digite um valor para B:"))
-c = int(input("Digite um valor para C:"))
-if a >= a  and c
+# a = int(input("Digite um valor para A:"))
+# b = int(input("Digite um valor para B:"))
+# c = int(input("Digite um valor para C:"))
+# if a > b and c:
+#     print("O valor A é o maior")
+# elif b > a and c:
+#     print("O valor B é o maior")
+# elif c > b and c:
+#     print("O valor C é o maoior")
+
+# 9.Construa um programa que recebe três valores, A, B e C. Em seguida, apresente na tela os números em ordem crescente.
+
+a = int(input("Digite um valor para A: "))
+b = int(input("Digite um valor para B: "))
+c = int(input("Digite um valor para A: "))
+if a > b and c:
+    print("A ordem Crscente é:"a )
