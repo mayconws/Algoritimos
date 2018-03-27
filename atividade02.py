@@ -63,7 +63,7 @@
 #     print("Reprovado!")
 
 # 8.Construa um programa que recebe três valores, A, B e C. Em seguida, apresente na tela somente o maior deles.
-
+#
 # a = int(input("Digite um valor para A:"))
 # b = int(input("Digite um valor para B:"))
 # c = int(input("Digite um valor para C:"))
@@ -75,9 +75,58 @@
 #     print("O valor C é o maoior")
 
 # 9.Construa um programa que recebe três valores, A, B e C. Em seguida, apresente na tela os números em ordem crescente.
+#
+# a = int(input("Digite um valor para A: "))
+# b = int(input("Digite um valor para B: "))
+# c = int(input("Digite um valor para C: "))
+# if a > b and a > c:
+#     maior = a
+# if b > a and b > c:
+#     maior = b
+# if c > a and c > b:
+#     maior = c
+#
+# if a < b and a > c:
+#     meio = a
+# if b < a and b > c:
+#     meio = b
+# if c < a and c > b:
+#     meio = c
+#
+# if a < b and a < c:
+#     menor = a
+# if b < a and b < c:
+#     menor = b
+# if c < a and c < b:
+#     menor = c
+# print("A ordem Crescente é ", menor, meio, maior)
 
-a = int(input("Digite um valor para A: "))
-b = int(input("Digite um valor para B: "))
-c = int(input("Digite um valor para A: "))
-if a > b and c:
-    print("A ordem Crscente é:"a )
+# # 10.Construa um programa que mostre menu exatamente como o exemplo abaixo e implemente as funções necessárias:
+#     == Menu de Opções ==
+#     1. Somar 2 números
+#     2. Potência de um número
+#     3. Raiz de grau N
+#     == Opção escolhida:
+
+print('''== Menu de Opções ==
+1. Somar 2 números
+2. Potência de um números
+3. raiz de grau N''')
+opcao = int(input("== Opção Escolhida: "))
+if opcao == 1:
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    soma = n1 + n2
+    print("A soma dos 2 numeros é: ", soma)
+if opcao == 2:
+    n1 = int(input("Digite um número: "))
+    potencia = n1**2
+    print("A potência é: ", potencia)
+if opcao == 3:
+    a = int(input("Digite um valor para A: "))
+    b = int(input("Digite um valor para B: "))
+    c = int(input("Digite um valor para C: "))
+    raiz = b**2-(4*a*c)/2
+    print("A raiz de grau N é: ", raiz)
+else:
+    print("Opção inválida...Tente Novamete!")
