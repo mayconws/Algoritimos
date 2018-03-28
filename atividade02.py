@@ -144,11 +144,16 @@
 # if salario < 3000:
 #     imp7 = (salario*7.5)/100
 #     total = salario-imp7
-#     print("O seu salário com desconto é de: R$ ", total)
+#     print("O seu salário bruto é de: {}".format(salario))
+#     print("O valor descontado é de: {:.2f}".format(imp7))
+#     print("O seu salário com desconto é de: R$ {:.2f}".format(total))
+#
 # elif salario > 3000:
 #     imp15 = (salario*15)/100
 #     total = salario-imp15
-#     print("O seu salário com desconto é de: R$ ", total)
+#     print("O seu salário bruto é de: {}".format(salario))
+#     print("O valor descontado é de: {:.2f}".format(imp15))
+#     print("O seu salário com desconto é de: R$ {:.2f}".format(total))
 
 # 13.Construa um programa para receber 4 números e no final apresentar o maior e o menor deles.
 #
@@ -177,6 +182,55 @@
 # print("\033[32m", maior, "\033[1;0m")
 # print("\033[32m", menor, "\033[1;0m")
 
-# 14.Faça um Programa receba o valor de x, calcule e imprima o valor de f(x) que será:
+# 14.Faça um Programa que receba o valor de x, calcule e imprima o valor de f(x) que será:
 # f(x)= 12−x     se x<2
 # f(x)= 1x−2     se x≥2
+#
+# x = int(input("Digite um valor para X: "))
+# if x < 2:
+#     fx1 = 1/(2-x)
+#     print("O valor de f(x) é: ", fx1)
+#
+# elif x >= 2:
+#     fx2 = 1/(x-2)
+#     print("O valor de f(x) é: ", fx2)
+
+# 15.Construa um programa para determinar se o indivíduo está com um peso favorável. Essa situação é determinada através do IMC (Índice de Massa Corporal), que é definida como sendo a relação entre o peso e o quadrado da altura do indivíduo. Ou seja: IMC = peso/altura² e a situação do peso é determinada pela tabela abaixo:
+#
+# peso = float(input("Digite seu peso: "))
+# altura = float(input("Digite sua altura: "))
+# imc = peso/(altura*altura)
+# if imc < 18.5:
+#     print("Seu IMC é de: {:.1f}".format(imc))
+#     print(" === Peso Baixo ===")
+#
+# elif 18.5 <= imc < 24.9:
+#     print("Seu IMC é de: {:.1f}".format(imc))
+#     print("=== Peso Normal ===")
+#
+# elif 25 <= imc < 29.9:
+#     print("Seu IMC é de: {:.1f}".format(imc))
+#     print("=== Pré-Obesidade ===")
+#
+# elif 30 <= imc < 34.9:
+#     print("Seu IMC é de: {:.1f}".format(imc))
+#     print("=== Obesidade Grau I ===")
+#
+# elif 35 <= imc < 39.9:
+#     print("Seu IMC é de: {:.1f}".format(imc))
+#     print("=== Obesidade Grau II ===")
+#
+# elif imc >= 40:
+#     print("Seu IMC é de: {:.1f}".format (imc))
+#     print("=== Obesidade Grau III ===")
+
+# 16.As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e o contrataram para desenvolver o programa que vai calcular os reajustes. Faça um programa que recebe o salário de um colaborador e calcule o reajuste segundo o seguinte critério baseado no salário atual:
+# até R$ 710,00 (incluindo): aumento de 20%
+# entre R$ 710,00 e R$ 1.000,00: aumento de 15%
+# entre R$ 1.000,00 e R$ 2.500,00: aumento de 10%
+# de R$ 2.500,00 em diante: aumento de 5%
+# Após o aumento ser realizado, informe na tela:
+# o salário antes do reajuste;
+# o percentual de aumento aplicado;
+# o valor do aumento;
+# o novo salário, após o aumento.
