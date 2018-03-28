@@ -101,32 +101,82 @@
 #     menor = c
 # print("A ordem Crescente é ", menor, meio, maior)
 
-# # 10.Construa um programa que mostre menu exatamente como o exemplo abaixo e implemente as funções necessárias:
-#     == Menu de Opções ==
-#     1. Somar 2 números
-#     2. Potência de um número
-#     3. Raiz de grau N
-#     == Opção escolhida:
+# 10.Construa um programa que mostre menu exatamente como o exemplo abaixo e implemente as funções necessárias:
+# == Menu de Opções ==
+# 1. Somar 2 números
+# 2. Potência de um número
+# 3. Raiz de grau N
+# == Opção escolhida:
+#
+# print('''== Menu de Opções ==
+# 1. Somar 2 números
+# 2. Potência de um números
+# 3. raiz de grau N''')
+# opcao = int(input("== Opção Escolhida: "))
+# if opcao == 1:
+#     n1 = int(input("Digite o primeiro número: "))
+#     n2 = int(input("Digite o segundo número: "))
+#     soma = n1 + n2
+#     print("A soma dos 2 numeros é: ", soma)
+# if opcao == 2:
+#     n1 = int(input("Digite um número: "))
+#     potencia = n1**2
+#     print("A potência é: ", potencia)
+# if opcao == 3:
+#     a = int(input("Digite um valor para A: "))
+#     b = int(input("Digite um valor para B: "))
+#     c = int(input("Digite um valor para C: "))
+#     raiz = b**2-(4*a*c)/2
+#     print("A raiz de grau N é: ", raiz)
 
-print('''== Menu de Opções ==
-1. Somar 2 números
-2. Potência de um números
-3. raiz de grau N''')
-opcao = int(input("== Opção Escolhida: "))
-if opcao == 1:
-    n1 = int(input("Digite o primeiro número: "))
-    n2 = int(input("Digite o segundo número: "))
-    soma = n1 + n2
-    print("A soma dos 2 numeros é: ", soma)
-if opcao == 2:
-    n1 = int(input("Digite um número: "))
-    potencia = n1**2
-    print("A potência é: ", potencia)
-if opcao == 3:
-    a = int(input("Digite um valor para A: "))
-    b = int(input("Digite um valor para B: "))
-    c = int(input("Digite um valor para C: "))
-    raiz = b**2-(4*a*c)/2
-    print("A raiz de grau N é: ", raiz)
-else:
-    print("Opção inválida...Tente Novamete!")
+# 11.Uma loja está com uma promoção de 10% desconto em todos os seus produtos. Faça um programa que receba um valor, calcule e imprima o valor do desconto (em reais) e o valor final do produto após aplicar o desconto.
+#
+# produto = float(input("Digite o valor do produto: "))
+# desconto = (produto*10)/100
+# print("O valor do desconto é: R$", desconto)
+#
+# totaldesconto = produto - desconto
+# print("O valor final do do produto com desconto é: R$", totaldesconto)
+
+# 12.Faça um programa que calcule o valor de imposto a ser pago a partir de um salário bruto. Se o salário for maior que R$3.000,00 deverá ser cobrado 15% de imposto e se for menor, 7,5%. Por fim, apresente o salário bruto (total), o valor de imposto e o salário líquido (o bruto menos o imposto).
+#
+# salario = float(input("Digite o seu salário bruto: R$ "))
+# if salario < 3000:
+#     imp7 = (salario*7.5)/100
+#     total = salario-imp7
+#     print("O seu salário com desconto é de: R$ ", total)
+# elif salario > 3000:
+#     imp15 = (salario*15)/100
+#     total = salario-imp15
+#     print("O seu salário com desconto é de: R$ ", total)
+
+# 13.Construa um programa para receber 4 números e no final apresentar o maior e o menor deles.
+#
+# a = int(input("Digite um o primeiro número: "))
+# b = int(input("Digite um o segundo número: "))
+# c = int(input("Digite um o terceiro número: "))
+# d = int(input("Digite um o quarto número: "))
+# if a > b and a > c and a > d:
+#     maior = a
+# if b > a and b > c and b > d:
+#     maior = b
+# if c > a and c > b and c > d:
+#     maior = c
+# if d > a and d > b and d > c:
+#     maior = d
+#
+# if a < b and a < c and a < d:
+#     menor = a
+# if b < a and b < c and b < d:
+#     menor = b
+# if c < a and c < b and c < d:
+#     menor = c
+# if d < a and d < b and d < c:
+#     menor = d
+# print("\033[32m""O Maior e o Menor são:""\033[0;0m")
+# print("\033[32m", maior, "\033[1;0m")
+# print("\033[32m", menor, "\033[1;0m")
+
+# 14.Faça um Programa receba o valor de x, calcule e imprima o valor de f(x) que será:
+# f(x)= 12−x     se x<2
+# f(x)= 1x−2     se x≥2
