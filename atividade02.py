@@ -234,3 +234,64 @@
 # o percentual de aumento aplicado;
 # o valor do aumento;
 # o novo salário, após o aumento.
+#
+# print()
+# print('''=== Reajuste Salárial ===''')
+# print()
+# salario = float(input("Digite o salário do colaborador: RS "))
+# print()
+# if salario <= 710:
+#     aumento20 = (salario*20)/100
+#     total = salario+aumento20
+#     print("O salário antes do reajuste é de: {:.2f}".format(salario))
+#     print()
+#     print("O percentual de aumento aplicado é de: 20%")
+#     print()
+#     print("O valor do aumento é de: {:.2f}".format(aumento20))
+#     print()
+#     print("O novo salário após o aumento é de: {:.2f}".format (total))
+#
+# if 710 <= salario < 1000:
+#     aumento15 = (salario*15)/100
+#     total = salario+aumento15
+#     print("O salário antes do reajuste é de: {:.2f}".format(salario))
+#     print()
+#     print("O percentual de aumento aplicado é de: 15%")
+#     print()
+#     print("O valor do aumento aplicado é de: {:.2f}".format(aumento15))
+#     print()
+#     print("O novo salário após o aumento é de: {:.2f}".format(total))
+#
+# if 1000 <= salario < 2500:
+#     aumento10 = (salario*10)/100
+#     total = salario+aumento10
+#     print("O salário antes do reajuste é de: {:.2f}".format(salario))
+#     print()
+#     print("O percentual de aumento aplicado é de: 10%")
+#     print()
+#     print("O valor do aumento aplicado é de: {:.2f}".format(aumento10))
+#     print()
+#     print("O novo salário após o aumento é de: {:.2f}".format(total))
+#
+# if salario >= 2500:
+#     aumento5 = (salario*5)/100
+#     total = salario+aumento5
+#     print("O salário antes do reajuste é de: {:.2f}".format(salario))
+#     print()
+#     print("O percentual de aumento aplicado é de: 5%")
+#     print()
+#     print("O valor do aumento aplicado é de: {:.2f}".format(aumento5))
+#     print()
+#     print("O novo salário após o aumento é de: {:.2f}".format(total))
+
+# 17.Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+# Até 5 Kg        Acima de 5 Kg
+# Morango       R$ 8,90 por Kg     R$ 7,90 por Kg
+# Maçã         R$ 3,90 por Kg          R$ 3,50 por Kg
+# Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$25,00, receberá ainda um desconto de 7% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maçãs adquiridas e calcule o valor a ser pago pelo cliente.
+
+morango = input(input("Qual fruta você esta comprando? " ))
+kg = input(inpu("Digite a quantidade em Kg: " ))
+if kg <= 5:
+    preco = 8.90
+    print("")
