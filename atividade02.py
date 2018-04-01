@@ -289,9 +289,64 @@
 # Morango       R$ 8,90 por Kg     R$ 7,90 por Kg
 # Maçã         R$ 3,90 por Kg          R$ 3,50 por Kg
 # Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$25,00, receberá ainda um desconto de 7% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maçãs adquiridas e calcule o valor a ser pago pelo cliente.
+#
+# morango = int(input("Digite a quantidade de morango (Kg): "))
+# maca = int(input("Digite a quantidade de maça (Kg): "))
+# if morango <= 5 or maca <= 5:
+#     morango_5 = morango*8.90
+#     maca_5 = maca*3.90
+#     total = morango_5+maca_5
+#
+# if morango > 5 or maca > 5:
+#     morango_maior = morango*7.90
+#     maca_maior = maca*3.50
+#     total = morango_maior+maca_maior
+#
+# if total > 25:
+#         desconto = (total*7)/100
+#         vfinal = total-desconto
+#         print("O valor a ser pago é: {:.2f}".format(total))
+#         print("O valor do desconto é de: {:.2f}".format(desconto))
+#         print("O valor do desconto é de: {:.2f}".format(vfinal))
 
-morango = input(input("Qual fruta você esta comprando? " ))
-kg = input(inpu("Digite a quantidade em Kg: " ))
-if kg <= 5:
-    preco = 8.90
-    print("")
+# 18.Faça um Programa para calcular a quantidade de notas de um troco. O programa deverá
+# perguntar ao usuário o valor do troco (inteiro) e depois informar quantas notas (considere
+# R$1 como nota, pois temos moeda) de cada valor serão fornecidas. As notas disponíveis
+# serão as de 1, 2, 5, 10, 50 e 100 reais.
+# Exemplo 1​: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100,
+# uma nota de 50, uma nota de 5 e uma nota de 1;
+# Exemplo 2​: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma
+# nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+
+print("==="*10)
+dinheiro = int(input("Digite o valor para saque: R$ " ))
+total = dinheiro
+cedula = 100
+total_cedula = 0
+
+while True:
+    if total >= cedula:
+        total -= cedula
+        total_cedula += 1
+    else:
+        if total_cedula > 0:
+            print("Total de Notas: ", total_cedula)
+            print("Cedulas de R$: ", cedula)
+        if cedula == 100:
+            cedula = 50
+        elif cedula == 50:
+            cedula = 10
+        elif cedula == 10:
+            cedula = 5
+        elif cedula == 5:
+            cedula = 2
+        elif cedula == 2:
+            cedula = 1
+        elif cedula == 1:
+            cedula = 1
+            total_cedula = 0
+        if total == 0:
+            break
+
+print("==="*10)
+print("Obrigado! Volte sempre!")
