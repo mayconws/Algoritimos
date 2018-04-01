@@ -317,36 +317,36 @@
 # uma nota de 50, uma nota de 5 e uma nota de 1;
 # Exemplo 2​: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma
 # nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
-
-print("==="*10)
-dinheiro = int(input("Digite o valor para saque: R$ " ))
-total = dinheiro
-cedula = 100
-total_cedula = 0
-
-while True:
-    if total >= cedula:
-        total -= cedula
-        total_cedula += 1
-    else:
-        if total_cedula > 0:
-            print("Total de Notas: ", total_cedula)
-            print("Cedulas de R$: ", cedula)
-        if cedula == 100:
-            cedula = 50
-        elif cedula == 50:
-            cedula = 10
-        elif cedula == 10:
-            cedula = 5
-        elif cedula == 5:
-            cedula = 2
-        elif cedula == 2:
-            cedula = 1
-        elif cedula == 1:
-            cedula = 1
-            total_cedula = 0
-        if total == 0:
-            break
-
-print("==="*10)
-print("Obrigado! Volte sempre!")
+#
+# print("==="*10)
+# dinheiro = int(input("Digite o valor para saque: R$ " ))
+# total = dinheiro
+# cedula = 100
+# total_cedula = 0
+#
+# while True:
+#     if total >= cedula:
+#         total -= cedula
+#         total_cedula += 1
+#     else:
+#         if total_cedula > 0:
+#             print("Total de Notas: ", total_cedula)
+#             print("Cedulas de R$: ", cedula)
+#         if cedula == 100:
+#             cedula = 50
+#         elif cedula == 50:
+#             cedula = 10
+#         elif cedula == 10:
+#             cedula = 5
+#         elif cedula == 5:
+#             cedula = 2
+#         elif cedula == 2:
+#             cedula = 1
+#         elif cedula == 1:
+#             cedula = 1
+#             total_cedula = 0
+#         if total == 0:
+#             break
+#
+# print("==="*10)
+# print("Obrigado! Volte sempre!")
