@@ -75,10 +75,53 @@
 
 # 2.Faça um programa para calcular a tabuada:
 # a) do 1 ao 10 para um número informado pelo usuário.
-n = int(input("Informe o valor para calcular a tabuada: "))
-x = 1
-while x <= 10:
-     print(n, "x", x, "=", n*x)
-     x = x + 1
+# n = int(input("Informe o valor para calcular a tabuada: "))
+# x = 1
+# while x <= 10:
+#      print(n, "x", x, "=", n*x)
+#      x = x + 1
 
 # b) do X ao Y para um número informado pelo usuário (o usuário também deve informar os valores de X e Y).
+# x = int(input("Digite um número para a tabuada: "))
+# y = int(input("Digite um número final para tabuada: "))
+# soma = 1
+# while x <= y:
+#     print(x, "x", y, "=", x*y)
+#     x = x + 1
+#     soma = soma + x
+
+# 3.Na matemática, o fatorial de um número natural n, representado por n!, é o produto de todos
+# os inteiros positivos menores ou iguais a n. Por exemplo: o fatorial de 5 é representado por 5!
+# que é igual a 5 x 4 x 3 x 2 x 1. Faça um programa que peça um número para o usuário e apresente na tela seu fatorial.
+# numero = int(input("Digite um numero para calcular o seu fatorial: "))
+# numero_calc = numero
+# fatorial = 1
+# while numero_calc > 0:
+#     fatorial = fatorial*numero_calc
+#     numero_calc = numero_calc - 1
+# print("O Fatorial de {}!" " = {}".format(numero, fatorial))
+
+# 4.Faça um programa que mostre o menu a seguir, receba a opção do usuário e os dados necessários para executar cada operação.
+ # O programa será executado repetidamente até que o usuário passe o número informado para sair do programa (opção).
+# ====== Menu Principal ======
+# 1. Par ou ímpar?
+# 2. Potência XY
+# 3. Raiz quadrada
+# 4. Sair
+print('''===== Menu =====
+1. Par ou Impar?
+2. Potência X e Y
+3. Raiz quadrada
+4. Sair
+=================''')
+numero = int(input("Digite uma opção: "))
+opcao = int(input("Informe o valor para ser calculado: "))
+while opcao != 4:
+
+
+# 5.Faça um programa que mostre o menu a seguir, receba a opção do usuário e os dados necessários para executar cada operação. O programa será executado repetidamente até que o usuário passe o número informado para sair do programa (opção).
+# ====== Menu Principal ======
+# 1. Fazer a tabuada do 1 ao 10 para um número X
+# 2. Apresentar os múltiplos de X entre 1 e 100
+# 3. Apresentar a soma dos números de 1 a 100
+# 4. Sair do programa
