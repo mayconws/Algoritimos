@@ -108,15 +108,27 @@
 # 2. Potência XY
 # 3. Raiz quadrada
 # 4. Sair
-print('''===== Menu =====
-1. Par ou Impar?
-2. Potência X e Y
-3. Raiz quadrada
-4. Sair
-=================''')
-numero = int(input("Digite uma opção: "))
-opcao = int(input("Informe o valor para ser calculado: "))
-while opcao != 4:
+#
+# opcao = 0
+# while opcao != 4:
+#     print('''===== Menu =====
+#     1. Par ou Impar?
+#     2. Potência X e Y
+#     3. Raiz quadrada
+#     4. Sair
+#     =================''')
+#     opcao = int(input("Digite a opção selecionada: "))
+#
+#     if opcao == 1:
+#
+#         if numero % 2 == 0:
+#             print("O número é par")
+#         else:
+#             print("O número é impar")
+#
+#     elif opcao == 2:
+#         x = int(input("Informe o valor para ser calculado: "))
+#         while numero == x:
 
 
 # 5.Faça um programa que mostre o menu a seguir, receba a opção do usuário e os dados necessários para executar cada operação. O programa será executado repetidamente até que o usuário passe o número informado para sair do programa (opção).
@@ -125,3 +137,93 @@ while opcao != 4:
 # 2. Apresentar os múltiplos de X entre 1 e 100
 # 3. Apresentar a soma dos números de 1 a 100
 # 4. Sair do programa
+#
+# opcao = 0
+# while opcao != 4:
+#     print('''===== Menu =====
+#     #     1. Fazer a tabuada do 1 ao 10 para um numero x
+#     #     2. Apresentar os múltiplos de X entre 1 e 100
+#     #     3. Apresentar a soma dos números de 1 a 100
+#     #     4. Sair do programa
+#     #     =================''')
+#     opcao = int(input("Digite a opção selecionada: "))
+#
+#     if opcao == 1:
+#         n = int(input("Digite um número para calcular a tabuada: "))
+#         x = 1
+#         while x <= 10:
+#             print(n, "x", x, "=", n*x)
+#             x = x + 1
+#
+#     elif opcao == 2:
+#         x = int(input("Digite um número para calcular o multiplo x: "))
+#         while x <= 100:
+#             if x % 2 == 0:
+#                 print(x)
+#
+#     elif opcao == 3:
+#         s = int(input("Digite um núemro para a soma de 1 à 100: "))
+#         soma = 0
+#         while s <= 100:
+#             if s % 2 == 0:
+#                 soma = soma + s
+#             s = s + 1
+#         print("A soma é: ", soma)
+#
+#     elif opcao == 4:
+#         print("Você saiu do programa!")
+
+# 6.O Sr. Manoel Joaquim expandiu seus negócios para além dos negócios de 1,99 e agora possui uma loja de conveniências. Faça um programa que implemente uma caixa registradora. O programa deverá receber um número desconhecido de valores referentes aos preços das mercadorias. O valor “0” (zero) deve ser informado pelo operador para indicar o final da compra. O programa deve então mostrar o total da compra e perguntar o valor em dinheiro que o cliente forneceu, para então calcular e mostrar o valor do troco. A saída deve ser conforme o exemplo abaixo:
+# Lojas Tabajara
+# Produto 1: R$ 2.20
+# Produto 2: R$ 5.80
+# Produto 3: R$ 10.00
+# Produto 4: R$ 0
+# Total: R$ 18.00
+# Dinheiro: R$ 20.00
+# Troco: R$ 2.00
+
+# def clear():
+#     print("\n")
+#
+# while True:
+#     print("---------- LOJA TABAJARA -----------")
+#     n = 1
+#     total = 0
+#
+#     while True:
+#         preco = float(input("Produto {}: R$ ".format(n)))
+#         n += 1
+#         total += preco
+#         if preco == 0:
+#             break
+#
+#     print("------------------------------------")
+#
+#     print("Total: R$ {:.2f} ".format(total))
+#     dinheiro = float(input("Dinheiro: R$ "))
+#     print("Troco: R$ {:.2f}".format(dinheiro - total))
+#
+#     print("------------------------------------")
+#
+#     reset = input("pressione 0 para reset, 1 para encerrar: ")
+#     if reset == "0":
+#         clear()
+#         continue
+#     else:
+#         clear()
+#         print("Encerrando caixa...")
+#         break
+
+# 7.O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia as um conjunto indeterminado de temperaturas,
+# e informe ao final a menor e a maior temperaturas informadas, bem como a média das temperaturas.
+m = 1
+tmax = 200
+tmin = -200
+while True:
+    temp = float(input("Digite a temperatura:{}".format(m))
+    m += 1
+    if temp < 200:
+        break
+    if temp < 200:
+        break
