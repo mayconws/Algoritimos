@@ -217,13 +217,17 @@
 
 # 7.O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia as um conjunto indeterminado de temperaturas,
 # e informe ao final a menor e a maior temperaturas informadas, bem como a média das temperaturas.
-m = 1
-tmax = 200
-tmin = -200
+
+# Exercíco 1 da Prova de Algorítimo (While)
+
+n = 1
+soma = 0
+
 while True:
-    temp = float(input("Digite a temperatura:{}".format(m))
-    m += 1
-    if temp < 200:
+    valor = float(input("Digite um valor {}: ".format(n)))
+    soma = soma + valor
+    n = n + 1
+    if valor == 0:
         break
-    if temp < 200:
-        break
+
+print("O total é de: {:.2f}".format(soma))
