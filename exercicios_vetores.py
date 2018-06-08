@@ -70,6 +70,17 @@
 # 3.Um professor precisa armazenar em uma lista os nomes dos alunos presentes em um minicurso.
 # Faça um programa para armazenar 5 nomes e permitir que o professor digite o nome da cada um. Em seguida,
 # apresente na tela todos os nomes informados.
+# print('''====================
+# Curso de Python
+# Instituto Federal do Paraná
+# ====================''')
+# lista = [""]*5
+# nomes = 0
+#
+# while nomes < len(lista):
+#      lista[nomes] = input("Digite os nomes para cadastro: ")
+#      nomes = nomes + 1
+# print("Os números sorteados são: {}".format(lista))
 
 # 4.Faça um programa que peça para o usuário informar o tamanho de um vetor. Em seguida,
 # crie este vetor e preencha ele com números digitados pelo usuário. Por fim, apresente na tela os números digitados.
