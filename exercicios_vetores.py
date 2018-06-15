@@ -121,11 +121,16 @@ while p < len(lista):
 # d) Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar os números na tela.
 # Por exemplo: na sequência 5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1 o usuário teria que informar 4 e 8 (posição inicial e final,
 # respectivamente) para mostrar na tela somente os valores destacados.
-
-
+# p = int(input("Digite a posição inicial: "))
+# f = int(input("Digite a posição final: "))
+#
+# while p < f:
+#     print("O número Inicial é: {} e o Número Final é: {}".format(p, f))
+#     p = p + 1
 
 # e) Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar a soma daquele intervalo.
 # Exemplo: Na sequência 5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1 , a soma do segmento destacado é 33.
+
 
 # f) Encontre qual é o maior e o menor número desta lista.
 
