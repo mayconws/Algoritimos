@@ -9,14 +9,7 @@ while len(msg_commit) < 5:
     msg_commit = input("Mensagem do commit: ")
 
 # Define um email padrão para este script
-email_padrao = "mayconwas2018@gmail.com"
-
-# Pede para o usuário informar outro email, caso ele queira
-email = input("Digite enter para manter o {} como padrão ou informe seu e-mail: ".format(email_padrao))
-
-# Se não informar, o script vai usar o padrão
-if email == "":
-    email = email_padrao
+email = "mayconwas2018@gmail.com"
 
 # O \n dentro do print funciona como o <br/> no HTML (pula mais uma linha)
 print("\n------------------------------------")

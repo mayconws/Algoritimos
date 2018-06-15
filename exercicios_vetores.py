@@ -95,18 +95,40 @@ while p < len(lista):
 
 # 5.Para os exercícios abaixo, utilize o vetor criado no exercício anterior.
 # a) Apresente os números do vetor em ordem inversa.
-p = len(lista) - 1
-while p < len(lista):
-    print(lista[p])
-    p = p - 1
+# p = len(lista) - 1
+# while p < len(lista):
+#     print(lista[p])
+#     p = p - 1
 
 # b) Apresente a soma de todos os elementos.
+# soma = 0
+# p = 0
+#
+# while p <= len(lista):
+#     soma = soma + p
+#     p = p + 1
+# print("A soma dos númetos: {}".format(soma))
+
+# c) Calcule a média aritmética dos valores.
 # soma = 0
 # p = 0
 #
 # while p < len(lista):
 #     soma = soma + p
 #     p = p + 1
-# print("A soma é : ", soma)
+# print("A média Aritmetica: {}".format(soma/len(lista)))
 
-# c) Calcule a média aritmética dos valores.
+# d) Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar os números na tela.
+# Por exemplo: na sequência 5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1 o usuário teria que informar 4 e 8 (posição inicial e final,
+# respectivamente) para mostrar na tela somente os valores destacados.
+
+
+
+# e) Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar a soma daquele intervalo.
+# Exemplo: Na sequência 5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1 , a soma do segmento destacado é 33.
+
+# f) Encontre qual é o maior e o menor número desta lista.
+
+# g) Encontre qual é o maior e o menor número desta lista. Além disso, informe quais são os índices (posições) deles.
+
+# h) Informe quantos números pares e ímpares foram digitados (apenas a quantidade de cada).
