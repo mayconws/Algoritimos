@@ -130,10 +130,23 @@ while p < len(lista):
 
 # e) Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar a soma daquele intervalo.
 # Exemplo: Na sequência 5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1 , a soma do segmento destacado é 33.
-
+# i = int(input("Digite a posição inicial: "))
+# f = int(input("Digite a posição final: "))
+# p = 0
+# soma = 0
+#
+# while i < f:
+#     soma = soma + p
+#     p = p + 1
+# print("A soma dos números selecionados é: {}".format(soma))
 
 # f) Encontre qual é o maior e o menor número desta lista.
 
 # g) Encontre qual é o maior e o menor número desta lista. Além disso, informe quais são os índices (posições) deles.
 
 # h) Informe quantos números pares e ímpares foram digitados (apenas a quantidade de cada).
+
+# 6. Crie um vetor para armazenar alguns números que serão utilizados no cálculo da tabuada.
+# a) Apresente todos os números informados e seu respectivo dobro.
+# 
+# b) Para cada número presente no vetor, faça a tabuada do 1 ao 10 (utilizando laço de repetição).
