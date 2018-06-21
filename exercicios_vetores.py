@@ -84,8 +84,8 @@
 
 # 4.Faça um programa que peça para o usuário informar o tamanho de um vetor. Em seguida,
 # crie este vetor e preencha ele com números digitados pelo usuário. Por fim, apresente na tela os números digitados.
-# t = int(input("Digite o tamanho da lista: "))
-# lista = [""]*t
+t = int(input("Digite o tamanho da lista: "))
+lista = [""]*t
 # p = 0
 #
 # while p < len(lista):
@@ -95,3 +95,14 @@
 
 # 5.Para os exercícios abaixo, utilize o vetor criado no exercício anterior.
 # a) Apresente os números do vetor em ordem inversa.
+p = 1
+
+while p <= len(lista):
+     lista[p] = int(input("Digite os números:"))
+     p = p + 1
+
+p = len(lista)
+
+while p >= len(lista):
+    print(lista[p])
+    p = p - 1
