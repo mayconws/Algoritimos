@@ -1,5 +1,5 @@
 # 1. Crie um vetor e armazene os números de 1 a 100. Cada número deve ocupar uma posição do vetor (lista).
-# a) Mostre na tela todos os números do vetor em ordem crescente (1 a 100).
+# # a) Mostre na tela todos os números do vetor em ordem crescente (1 a 100).
 # lista = [""]*100
 # p = 0
 # while p < len(lista):
@@ -59,13 +59,13 @@
 
 # 2. Faça um programa para armazenar 6 números inteiros para uma loteria,
 # permitindo que o usuário informe os números sorteados. Depois de preencher, informe uma mensagem e os números sorteados.
-# lista = [""]*6
-# numero = 0
-#
-# while numero < len(lista):
-#     lista[numero] = int(input("Digite os números para sorteio: "))
-#     numero = numero + 1
-# print("Os números sorteados são: {}".format(lista))
+lista = [""]*6
+numero = 0
+
+while numero < len(lista):
+    lista[numero] = int(input("Digite os números para sorteio: "))
+    numero = numero + 1
+print("Os números sorteados são: {}".format(lista))
 
 # 3.Um professor precisa armazenar em uma lista os nomes dos alunos presentes em um minicurso.
 # Faça um programa para armazenar 5 nomes e permitir que o professor digite o nome da cada um. Em seguida,
@@ -84,8 +84,8 @@
 
 # 4.Faça um programa que peça para o usuário informar o tamanho de um vetor. Em seguida,
 # crie este vetor e preencha ele com números digitados pelo usuário. Por fim, apresente na tela os números digitados.
-t = int(input("Digite o tamanho da lista: "))
-lista = [""]*t
+# t = int(input("Digite o tamanho da lista: "))
+# lista = [""]*t
 
 # p = 0
 #
@@ -131,10 +131,23 @@ lista = [""]*t
 
 # e) Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar a soma daquele intervalo.
 # Exemplo: Na sequência 5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1 , a soma do segmento destacado é 33.
-
+# i = int(input("Digite a posição inicial: "))
+# f = int(input("Digite a posição final: "))
+# p = 0
+# soma = 0
+#
+# while i < f:
+#     soma = soma + p
+#     p = p + 1
+# print("A soma dos números selecionados é: {}".format(soma))
 
 # f) Encontre qual é o maior e o menor número desta lista.
 
 # g) Encontre qual é o maior e o menor número desta lista. Além disso, informe quais são os índices (posições) deles.
 
 # h) Informe quantos números pares e ímpares foram digitados (apenas a quantidade de cada).
+
+# 6. Crie um vetor para armazenar alguns números que serão utilizados no cálculo da tabuada.
+# a) Apresente todos os números informados e seu respectivo dobro.
+#
+# b) Para cada número presente no vetor, faça a tabuada do 1 ao 10 (utilizando laço de repetição).

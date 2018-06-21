@@ -130,7 +130,6 @@
 #         x = int(input("Informe o valor para ser calculado: "))
 #         while numero == x:
 
-
 # 5.Faça um programa que mostre o menu a seguir, receba a opção do usuário e os dados necessários para executar cada operação. O programa será executado repetidamente até que o usuário passe o número informado para sair do programa (opção).
 # ====== Menu Principal ======
 # 1. Fazer a tabuada do 1 ao 10 para um número X
