@@ -59,13 +59,13 @@
 
 # 2. Faça um programa para armazenar 6 números inteiros para uma loteria,
 # permitindo que o usuário informe os números sorteados. Depois de preencher, informe uma mensagem e os números sorteados.
-lista = [""]*6
-numero = 0
-
-while numero < len(lista):
-    lista[numero] = int(input("Digite os números para sorteio: "))
-    numero = numero + 1
-print("Os números sorteados são: {}".format(lista))
+# lista = [""]*6
+# numero = 0
+#
+# while numero < len(lista):
+#     lista[numero] = int(input("Digite os números para sorteio: "))
+#     numero = numero + 1
+# print("Os números sorteados são: {}".format(lista))
 
 # 3.Um professor precisa armazenar em uma lista os nomes dos alunos presentes em um minicurso.
 # Faça um programa para armazenar 5 nomes e permitir que o professor digite o nome da cada um. Em seguida,
@@ -86,7 +86,7 @@ print("Os números sorteados são: {}".format(lista))
 # crie este vetor e preencha ele com números digitados pelo usuário. Por fim, apresente na tela os números digitados.
 # t = int(input("Digite o tamanho da lista: "))
 # lista = [""]*t
-
+#
 # p = 0
 #
 # while p < len(lista):
