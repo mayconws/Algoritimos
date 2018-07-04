@@ -4,7 +4,7 @@ JOGO DA FORCA - IFPR
 print('')
 
 print('''====================
-Vamos Jogar?
+Pronto para Começar...?
 ====================''')
 print('')
 
@@ -24,6 +24,18 @@ while True:
     else:
         print("Digite uma Opção Válida!")
 
-palvaras = ["azul"]
+palavras = [
+    "ifpr",
+    "cachorro",
+    "caminhão",
+    "corinthians",
+    "paralelepipido",
+]
 
-print("Digite uma letra para a palavra abaixo....")
+dicas = [
+    "É uma instituição de ensino",
+    "É um animal",
+    "É um veículo",
+    "maior time do Brasil",
+    "Uma forma geometrica"
+]
