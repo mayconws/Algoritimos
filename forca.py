@@ -1,12 +1,15 @@
-print('''====================
-JOGO DA FORCA - IFPR
-====================''')
-print('')
+def clear():
+    print("\n")
 
-print('''====================
-Pronto para Começar...?
-====================''')
-print('')
+print('''==============================
+     JOGO DA FORCA - IFPR
+==============================''')
+print("\n")
+
+print('''==============================
+     Pronto para Começar...?
+==============================''')
+print("\n")
 
 aceita = 1
 n_aceita = 0
@@ -14,28 +17,24 @@ n_aceita = 0
 while True:
     inicio = int(input("Digite (1) para Inicar ou (0) para Sair: "))
     if inicio == aceita:
+        print("\n")
         print("Começando o jogo....FORCA - IFPR")
         break
 
     elif inicio == n_aceita:
-        print("Saindo do jogo....Obrigado!")
+        print("Saindo do jogo....")
+        print("\n")
+        print("Obrigado!")
+        clear()
         break
-
-    else:
-        print("Digite uma Opção Válida!")
 
 palavras = [
     "ifpr",
     "cachorro",
-    "caminhão",
-    "corinthians",
-    "paralelepipido",
+    "mundial",
+    "testando",
+    "palavra composta"
 ]
 
-dicas = [
-    "É uma instituição de ensino",
-    "É um animal",
-    "É um veículo",
-    "maior time do Brasil",
-    "Uma forma geometrica"
-]
+letras_digitas = []
+erros = []
