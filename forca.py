@@ -24,7 +24,6 @@ while True:
         palavra = lista_palavras[pos]
         riscos = [" _ "] * len(palavra)
 
-
         print("\n")
         print("Começando o jogo....FORCA - IFPR")
 
@@ -34,6 +33,19 @@ while True:
             letra = input("Digite uma letra: ")
 
             #percorrer a palavra e ver se a letra está na palavra
+            l=0
+            while l < len(palavra):
+                if palavra[l] == letra:
+                    riscos[l] = letra
+
+                # fazer um esquema para verificar se errou ou acertou
+
+                l+=1
+
+            #se ele errou
+            #conta um erro a mais
+
+            #mostrar o desenho conforme a quantidade de erros
 
 
         print(palavra)
@@ -43,5 +55,4 @@ while True:
         print("Saindo do jogo....")
         print("\n")
         print("Obrigado!")
-        clear()
         break
