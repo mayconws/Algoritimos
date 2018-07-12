@@ -119,7 +119,7 @@ while True:
         break
 
     listaPalavras = ["casa", "shopping", "palio", "palmeiras", "lakers", "lucas", "acdc", "dinossauro"]
-    listaDicas = ["Local de descanso...", "Ir as compras...", "Carro popular", "Time sem mundial...", "Time da NBA...", "Companheiro de sala...", "Banda de Rock...", "Anima pré-histórico..."]
+    listaDicas = ["DICA: Local de descanso...", "DICA: Ir as compras...", "DICA: Carro popular", "DICA: Time sem mundial...", "DICA: Time da NBA...", "DICA: Companheiro de sala conhecido como Nethoes...", "DICA: Banda de Rock...", "DICA: Animal Pré Histórico..."]
 
     # Escolha uma palavra no vetor da lista.
     x = randint(0,len(listaPalavras) - 1) # O -1 porque a lista começa em 0, se não tiver o -1 vai passar a quantidade de posições.
