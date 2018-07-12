@@ -1,6 +1,6 @@
 from random import randint
 
-# Deesenhos dos erros da Forca..... Com a função (def).
+# Desenhos dos erros da Forca..... Com a função (def).
 def erro1():
     print("""
 |─|─────────────────|
