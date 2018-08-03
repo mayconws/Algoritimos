@@ -141,7 +141,7 @@ while True:
 
             else:
                 erros = erros + 1
-
+                
             if erros == 1:
                 tentativa1()
             elif erros == 2:
