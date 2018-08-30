@@ -27,14 +27,14 @@
 #
 #     return triplo
 
-def exemplo4(num):
-
-    if num % 2 == 0:
-
-        return num ** 2
-    else:
-        n = num ** 3
-        return n
-
-k = exemplo4(850)
-print("O numero é: {}".format(k))
+# def exemplo4(num):
+#
+#     if num % 2 == 0:
+#
+#         return num ** 2
+#     else:
+#         n = num ** 3
+#         return n
+#
+# k = exemplo4(850)
+# print("O numero é: {}".format(k))

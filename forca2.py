@@ -11,6 +11,7 @@ while opcao != 4:
 
     opcao = int(input("Digite a opção selecionada: "))
 
+
     if opcao == 2:
 
         arq1 = open("arquivos/palavra.txt", "a")
@@ -22,12 +23,6 @@ while opcao != 4:
 
         arq1.close()
 
-        arq1 = open("arquivos/palavra.txt", "r")
-
-        conteudo = arq1.readlines()
-
-        arq1.close()
-
     elif opcao == 3:
 
         arq2 = open("arquivos/dica.txt", "a")
@@ -36,12 +31,6 @@ while opcao != 4:
 
         arq2.write(dica)
         arq2.write("\n")
-
-        arq2 = open("arquivos/dica.txt", "r")
-
-        conteudo = arq2.readlines()
-
-        arq2.close()
 
     elif opcao == 4:
         print("Saindo do Pragrama...")

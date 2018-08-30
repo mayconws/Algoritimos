@@ -6,7 +6,7 @@
 #     lista[p] = int(input("Numero: "))
 #     p = p + 1
 
-#Fazendo a soma de valores
+# Fazendo a soma de valores
 # soma = 0
 # p = 0
 # while p < len(lista):
@@ -15,7 +15,7 @@
 #     p = p + 1
 # print("A soma é : ", soma)
 # print("A média é: ", soma/len(lista))
-#
+
 # soma = 0
 # pesos = 0
 # p = 0
