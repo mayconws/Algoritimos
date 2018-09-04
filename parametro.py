@@ -38,3 +38,33 @@
 #
 # k = exemplo4(850)
 # print("O numero é: {}".format(k))
+
+# def soma(x,y):
+#     total = x+y
+#     print("O total da soma de x + y é: ", total)
+#
+# soma(10,50)
+
+# def multiplicacao(a,b):
+#
+#     mult = a * b
+#
+#     print("A Multiplicação dos números: ", mult)
+#
+# multiplicacao(2,2)
+
+# def teste(a):
+#
+#     usuario = int(input("Digite um numero: "))
+#
+#     mult = usuario ** 2
+#
+#     print("A multiplicação é: ", mult)
+#
+# teste(9)
+
+def soma():
+
+    r = 1 + 2
+
+soma()
