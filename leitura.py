@@ -1,4 +1,4 @@
-fileh = open("arquivos/nomes.txt", "r")
+fileh = open("arquivos/numeros.txt", "r")
 
 conteudo = fileh.readlines()
 
