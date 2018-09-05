@@ -119,26 +119,29 @@
 # 4 - Crie uma função que recebe o nome do arquivo por parâmetro, leia o conteúdo do arquivo,
 # calcule a soma dos números registrados e imprima-a na tela do programa somente a soma final.
 
-arquivo = open("arquivos/numeros.txt", "r")
+def soma():
+    arquivo = open("arquivos/numeros.txt", "r")
 
-conteudo = arquivo.readlines()
+    conteudo = [ ]
 
-arquivo.close()
+    conteudo = arquivo.readlines()
 
-l = 0
+    arquivo.close()
 
-while l < len(conteudo) :
-    print(conteudo[l])
-    l+=1
+    l = 0
+    soma = 0
+    while l < len(conteudo) :
 
-l = 0
-soma = 1
+        numero = conteudo[l]
+        numero = int(numero)
 
-while l < len(conteudo) :
-    soma = soma + l
-    print("A soma dos números é: ", soma)
-    l+=1
+        soma = soma + numero
 
+        l+=1
+
+    print(soma)
+
+soma()
 
 # Karen
 #
