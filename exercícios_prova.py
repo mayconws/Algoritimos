@@ -221,16 +221,6 @@ soma = 0
 
 while t < len(conteudo):
 
-    num = conteudo[t]
-    num = int(num)
-
-    soma = soma + num
+    soma = soma + conteudo
     print(conteudo)
     t = t + 1
-
-     # numero = conteudo[l]
-    #         numero = int(numero)
-    #
-    #         soma = soma + numero
-    #
-    #         l+=1
