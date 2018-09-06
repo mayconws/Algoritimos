@@ -45,16 +45,6 @@
 #     print(x)
 #     x = x + 1
 
-# x = 1
-# y = 0
-# while x >= y:
-#     x = int(input("Informe um valor x: "))
-#     y = int(input("Informe um valor y: "))
-#
-# while x <= y:
-#     print(x)
-#     x = x + 1
-
 # f)
 # x = int(input("Informe um valor x: "))
 # y = int(input("Informe um valor y: "))
@@ -219,14 +209,14 @@
 
 # Exercíco 1 da Prova de Algorítimo (While)
 
-n = 1
-soma = 0
-
-while True:
-    valor = float(input("Digite um valor {}: ".format(n)))
-    soma = soma + valor
-    n = n + 1
-    if valor == 0:
-        break
-
-print("O total é de: {:.2f}".format(soma))
+# n = 1
+# soma = 0
+#
+# while True:
+#     valor = float(input("Digite um valor {}: ".format(n)))
+#     soma = soma + valor
+#     n = n + 1
+#     if valor == 0:
+#         break
+#
+# print("O total é de: {:.2f}".format(soma))

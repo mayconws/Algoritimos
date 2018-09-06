@@ -150,7 +150,7 @@
 #     else:
 #         return num2
 #
-# numero = num_menor(12,9)
+# numero = num_menor(12,9
 #
 # print("O menor número: é {}".format(numero))
 
@@ -173,9 +173,64 @@
 # A função deve abrir o arquivo informado e adicionar o nome e a idade da pessoa
 # (considerando o ano atual que estamos) da seguinte forma:
 
-def usuario(arquivo,nome,ano):
+# def arq_pes_ano():
+#     arquivo = open("arquivos/idade.txt", "a")
+#
+#     nome = input("Digite seu nome: ")
+#     ano = input("Digite sua idade: ")
+#
+#     arquivo.write(nome,)
+#     arquivo.write("\n")
+#
+#     arquivo.write(ano)
+#     arquivo.write("\n")
+#
+#     arquivo.close()
+#
+#     print(nome,"-", ano)
+#
+# arq_pes_ano()
 
-    usuario.write("João, 20")
-    usuario.write("\n")
+# def raiz_quadrada():
+#     valor = int(input("Digite um número inteiro: "))
+#     raiz = valor ** (1/2)
+#
+#     print("A raiz quadrada do número informado é: {}".format(raiz))
+#
+# raiz_quadrada()
 
-usuario("idade.txt","joão",20)
+# def par_impar(num):
+#
+#     if num % 2 == 0:
+#         return("O número é Par")
+#     else:
+#         return("O número é Impar")
+#
+# print(par_impar(124))
+
+times = open("arquivos/nomes.txt", "r")
+
+conteudo = []
+
+conteudo = times.readline()
+
+times.close()
+
+t = 0
+soma = 0
+
+while t < len(conteudo):
+
+    num = conteudo[t]
+    num = int(num)
+
+    soma = soma + num
+    print(conteudo)
+    t = t + 1
+
+     # numero = conteudo[l]
+    #         numero = int(numero)
+    #
+    #         soma = soma + numero
+    #
+    #         l+=1
