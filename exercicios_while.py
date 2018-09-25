@@ -220,3 +220,37 @@
 #         break
 #
 # print("O total é de: {:.2f}".format(soma))
+
+# Soma de notas em uma lista e calculando a média das notas digitadas:
+#
+# notas = [""] * 5
+#
+# soma = 0
+#
+# x = 0
+#
+# while x < 5:
+#     notas[x] = int(input("Digite a nota: "))
+#     soma = soma + notas[x]
+#     x = x + 1
+#
+# x = 0
+#
+# while x < 5:
+#     print(notas[x])
+#     x = x + 1
+# print("Média: ", soma/x)
+
+numeros = [""] * 5
+
+x = 0
+
+while x < 5:
+    numeros[x] = int(input("Notas {}: ".format(x+1)))
+    x = x + 1
+
+while True:
+    escolhido = int(input("Que posição você quer imprimir (0 para Sair): "))
+    if escolhido == 0:
+        break
+    print("Você escolheu o número: {}".format(numeros[escolhido-1]))

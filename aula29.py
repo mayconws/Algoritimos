@@ -1,12 +1,14 @@
+# Importa uma biblioteca para poder usar seu conteúdo
 import sqlite3
 
-# ---  Funções do Programa ---
+########### F U N Ç Õ E S #########
 
-# --- Função 1: Criação da Tabela ---
 def criar_tabela_usuario(conexao):
 
+    # Cria o cursor para operar o banco
     cursor = conexao.cursor()
 
+    # Monta o SQL a ser executado
     sql = """
         CREATE TABLE IF NOT EXISTS usuario(
             nome text,
@@ -15,14 +17,16 @@ def criar_tabela_usuario(conexao):
         );
     """
 
+    # Executa um SQL
     cursor.execute(sql)
-# ---------------------------------------------------
 
-# --- Função 2: Inserir Usuário ---
+# Inserir novo usuário
 def inserir_usuario(conexao, nome, login, senha):
 
+    # Cria o cursos para operar o banco
     cursor = conexao.cursor()
 
+    # Monta o select com o format e os dados
     sql = """
         INSERT INTO usuario VALUES(
             '{}',
@@ -31,66 +35,88 @@ def inserir_usuario(conexao, nome, login, senha):
         );
     """.format(nome, login, senha)
 
+    # Exemplo:
+    # sql = """
+    #     INSERT INTO usuario VALUES(
+    #         'Rafael Zottesso',
+    #         'rafael',
+    #         '123'
+    #     );
+    # """
+
+    # Executa o sql
     cursor.execute(sql)
 
+    # Salvar as modificações.
+    # O commit sempre deve ser feito depois do INSERT, UPDATE ou DELETE
     conexao.commit()
-# ---------------------------------------------------
 
-# --- Função 3: Listar Usuários ---
+# Listar os registros de usuário
 def listar_usuarios(conexao):
 
+    # Cria o cursor para operar o banco
     cursor = conexao.cursor()
 
+    # Monta o SQL
     sql = "SELECT rowid, * FROM usuario ORDER BY nome;"
 
+    # Executa o SQL
     cursor.execute(sql)
 
-    usuarios = cursor.fetchall()
+    # Armazena os dados (registros) do select
+    # Toda vez que executa o select, precisa usar o fetch para buscar os registros
+    usuarios = cursor.fetchall() # buscar todos
 
+    # Cria um vetor para armazenar cada linha do select em uma posição
+    # Cria outro vetor para armazenar cada coluna de cada registro encontrado
+    #                0                      2
+    #         0      1      2       0       1       2
+    # V = [ ['1', 'Rafa', '123'], ['2', 'Fulano', '312'], []...  ]
+    #
+    # V[0][1] --> representa o 'Rafa'
+
+    # Percorrer a lista com os registros
+    # Estou chamando de "usr" cada usuario dessa lista
     for usr in usuarios:
         print( "{}: {} ({})".format(usr[0], usr[1], usr[2]) )
-# ---------------------------------------------------------------
+        # 1: Rafael Henrique (rafael.zottesso@ifpr.edu.br)
 
-# --- Função 4: Excluir Usuários ---
+
 def excluir_usuario(conexao, id):
 
+    # Criar cursos para operar o banco
     cursor = conexao.cursor()
 
+    # Monta o sql
     sql = """
         DELETE FROM usuario
         WHERE rowid = {};
     """.format(id)
 
+    # Executa o sql
     cursor.execute(sql)
 
+    # Faz o commit para salvar as alterações no banco
     conexao.commit()
-# ---------------------------------------------------------------
 
-# --- Função 5: Buscar Usuários ---
-def buscar_usuario(conexao):
 
-    cursor = conexao.cursor()
+############ P R I N C I P A L #############
 
-    sql = ""
-
-    cursor.execute(sql)
-# -----------------------------------------------------------------
-
-# --- Menu Principal do Programa ---
-
+# 1º - Iniciar a conexão (ligação) com nosso banco
 print("Conectando no banco...\n\n")
-conexao = sqlite3.connect("agenda.sqlite")
+conexao = sqlite3.connect("aula28.sqlite")
 
+# Início do programa
+# Pedir para o usuário as opções, dados, etc
 print("""
-Em relação aos usuários do sistema, você deseja...
-
+Em relação aos usuários do sistema,
+você deseja...
 1 - Inserir
 2 - Buscar
 3 - Listar
 4 - Alterar
 5 - Excluir
 9 - Voltar
-
 """)
 
 opcao = int(input("Opção desejada: "))
