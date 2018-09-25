@@ -82,6 +82,8 @@ print("Conectando no banco...\n\n")
 conexao = sqlite3.connect("agenda.sqlite")
 
 print("""
+==================================================
+
 Em relação aos usuários do sistema, você deseja...
 
 1 - Inserir
@@ -91,7 +93,7 @@ Em relação aos usuários do sistema, você deseja...
 5 - Excluir
 9 - Voltar
 
-""")
+==================================================""")
 
 opcao = int(input("Opção desejada: "))
 
