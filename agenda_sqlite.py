@@ -103,9 +103,16 @@ Em relação aos usuários do sistema, você deseja...
         l = input("Login: ")
         s = input("Senha: ")
 
-        # Validar campos obrigatórios
-        # ...
+        if n == "":
+            print("Espaço vazio! Digite um nome...")
 
+        if l == "":
+            print("Espaço vazio! Digite um login...")
+
+        if s == "":
+            print("Espaço vazio! Digite um senha...")
+
+        criar_tabela_usuario(conexao)
         inserir_usuario(conexao, n, l, s)
 
     elif opcao == 2:
@@ -127,7 +134,6 @@ Em relação aos usuários do sistema, você deseja...
     elif opcao == 6:
         print("\n--- Saindo ----\n")
         break
-
 # Fechando a conexão (ligação) com o banco
 print("\n\nFechando conexão com o banco...")
 conexao.close()
