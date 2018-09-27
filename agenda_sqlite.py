@@ -71,7 +71,7 @@ def buscar_usuario(conexao):
 
     cursor = conexao.cursor()
 
-    sql = ""
+    sql = "SELECT * FROM usuario WHERE rowid = {};".format(id)
 
     cursor.execute(sql)
 # -----------------------------------------------------------------
@@ -118,12 +118,15 @@ Em relação aos usuários do sistema, você deseja...
     elif opcao == 2:
         print("\n--- Buscar registro ---\n")
 
-        # Exemplo de sql para consultar tudo que contenah o nome digitado
-        # "SELECT ...... WHERE nome LIKE '%{}%';".format(nome)
+        id = input("Digite o nome do usuário para a busca: ")
+
+        buscar_usuario(conexao)
+        print(buscar_usuario(conexao))
 
     elif opcao == 3:
         print("\n--- Listagem registros ---\n")
         listar_usuarios(conexao)
+
 
     elif opcao == 4:
         print("\n--- Alteração de registros ---\n")
