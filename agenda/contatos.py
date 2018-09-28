@@ -83,13 +83,15 @@ def buscar_contato(conexao, nome):
         print( "{}: {} ({})".format(cont[0], cont[1], cont[2]) )
 # ----------------------------------------------------------------
 
-def alterar_contato(conexao, nome):
+def alterar_contato(conexao, nome, telefone, email, id):
 
     cursor = conexao.cursor()
 
-    sql = "UPDATE contato SET nome = '{}', fone = '{}', email = '{}' WHERE rowid = {}".format
+    sql = "UPDATE contato SET nome = '{}', fone = '{}', email = '{}' WHERE rowid = {}".format(nome, telefone, email, id)
 
     cursor.execute(sql)
+
+    conexao.commit()
 # -----------------------------------------------------------------------
 
 # ========== Menu Principal ==========
@@ -144,8 +146,11 @@ Em relação aos contatos do sistema, você deseja...
     elif opcao == 4:
         print("\n--- Alterando Contatos ---\n")
 
-        nome = input("Digite o nome do contato: ")
-        alterar_contato(conexao, nome)
+        n = input("Nome: ")
+        t = input("Telefone: ")
+        e = input("Email: ")
+        i = int(input("Id: "))
+        alterar_contato(conexao, n, t, e, i)
 
     elif opcao == 5:
         print("\n--- Exclusão de registro ---")
