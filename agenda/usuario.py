@@ -119,54 +119,54 @@ Em relação aos usuários do sistema, você deseja...
         opcao = int(input("\033[33mOpção desejada: \033[0;0m"))
 
         if opcao == 1:
-            print("\033[47m\033[31m\n\n--- Digite os dados do usuário ---\n\n\033[0;0m")
+            print("\033[44m\033[37m\n\n--- Digite os dados do usuário ---\n\n\033[0;0m")
 
             n = input("Nome: ")
             l = input("Login: ")
             s = input("Senha: ")
 
             if n == "":
-                print("\n\033[47m\033[31mEspaço vazio! Digite um nome...\n\033[0;0m")
+                print("\n\033[44m\033[37mEspaço vazio! Digite um nome...\n\033[0;0m")
 
             if l == "":
-                print("\n\033[47m\033[31mEspaço vazio! Digite um login...\n\033[0;0m")
+                print("\n\033[44m\033[37mEspaço vazio! Digite um login...\n\033[0;0m")
 
             if s == "":
-                print("\n\033[47m\033[31mEspaço vazio! Digite um senha...\n\033[0;0m")
-            print("\033[47m\033[31m\n--- Contato inserido com sucesso ---\n\033[0;0m")
+                print("\n\033[44m\033[37mEspaço vazio! Digite um senha...\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Contato inserido com sucesso ---\n\033[0;0m")
 
             inserir_usuario(conexao, n, l, s)
 
         elif opcao == 2:
-            print("\033[47m\033[31m\n--- Buscar registro ---\n\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Buscar registro ---\n\n\033[0;0m")
 
             nome = input("Digite o nome do usuário para a busca: ")
-            print("\033[47m\033[31m\n--- Registros Encontrados ---\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Registros Encontrados ---\n\033[0;0m")
             buscar_usuario(conexao, nome)
 
         elif opcao == 3:
-            print("\033[47m\033[31m\n--- Lista de usuário cadastrados ---\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Lista de usuário cadastrados ---\n\033[0;0m")
             listar_usuarios(conexao)
 
         elif opcao == 4:
-            print("\033[47m\033[31m\n--- Alteração de Usuários ---\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Alteração de Usuários ---\n\033[0;0m")
 
             n = input("Nome: ")
             l = input("Login: ")
             s = input("Senha: ")
             i = input("Id: ")
             alterar_usuario(conexao, n, l, s, i)
-            print("\033[47m\033[31m\n--- Alteração realizada com sucesso ---\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Alteração realizada com sucesso ---\n\033[0;0m")
 
         elif opcao == 5:
-            print("\033[47m\033[31m\n--- Exclusão de registro ---\n\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Exclusão de registro ---\n\n\033[0;0m")
 
             id = input("Digite o ID para do contato para excluir: ")
             excluir_usuario(conexao, id)
-            print("\033[47m\033[31m\n--- Usuário excluido com sucesso ---\033[0;0m")
+            print("\033[44m\033[37m\n--- Usuário excluido com sucesso ---\033[0;0m")
 
         elif opcao == 6:
-            print("\033[47m\033[31m\n--- Voltando ----\n\n\033[0;0m")
+            print("\033[44m\033[37m\n--- Voltando ----\n\n\033[0;0m")
             break
     # Fechando a conexão (ligação) com o banco
     print("\033[41m\033[37m\nFechando conexão com o banco...\033[0;0m")

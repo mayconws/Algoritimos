@@ -1,4 +1,4 @@
-import sqlite3
+from usuario import *
 
 # --- Função para criar a tabela ----
 def criar_tabela_contato(conexao):
@@ -171,7 +171,7 @@ Em relação aos contatos do sistema, você deseja...
 
     elif opcao == 6:
         print("\033[44m\033[37m\n--- Voltando ----\n\033[0;0m")
-        break
+        menuUsuario()
 
 print("\033[41m\033[37m\nFechando conexão com o banco...\033[0;0m")
 conexao.close()
