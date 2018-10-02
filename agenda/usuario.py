@@ -100,7 +100,7 @@ def alterar_usuario(conexao, nome, login, senha, id):
 # --- Menu Principal do Programa ---
 
 def menuUsuario():
-    print("\033[41m\033[37mConectando no banco...\n\033[0;0m")
+    print("\033[41m\033[37mConectando no banco...\033[0;0m\n")
     conexao = sqlite3.connect("banco.sqlite")
 
     opcao = 0
