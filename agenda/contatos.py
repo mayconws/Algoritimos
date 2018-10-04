@@ -49,8 +49,8 @@ def listar_contato(conexao):
 
     contato = cursor.fetchall()
 
-    print("\033[36mId Nome    Telefone     E-mail\n\033[0;0m")
-    print("\033[36m== ======= ===========  ================\n\033[0;0m")
+    print("\033[32mId Nome    Telefone     E-mail\033[0;0m\n")
+    print("\033[32m== ======= ===========  ================\033[0;0m\n")
     for cont in contato:
         print("{}: {} - ({}) -".format(cont[0], cont[1], cont[2]), cont[3] )
 # -----------------------------------------------------------
@@ -81,8 +81,8 @@ def buscar_contato(conexao, nome):
 
     contato = cursor.fetchall()
 
-    print("\033[36mId Nome    Telefone  E-mail\n\033[0;0m")
-    print("\033[36m== ======= ========  ================\n\033[0;0m")
+    print("\033[32mId Nome    Telefone  E-mail\033[0;0m\n")
+    print("\033[32m== ======= ========  ================\033[0;0m\n")
     for cont in contato:
         print( "{}: {} - ({}) -".format(cont[0], cont[1], cont[2]), cont[3] )
 # ----------------------------------------------------------------
@@ -101,7 +101,7 @@ def alterar_contato(conexao, nome, telefone, email, id):
 
 # ========== Menu Principal ==========
 
-print("\033[41m\033[37m\nConectando no banco...\n\033[0;0m")
+print("\n\033[47m\033[31mConectando no banco...\033[0;0m\n")
 conexao = sqlite3.connect("banco.sqlite")
 
 opcao = 0
@@ -117,10 +117,10 @@ Em relação aos contatos do sistema, você deseja...
     6 - Voltar
 \033[0;0m""")
 
-    opcao = int(input("\033[33mInforme a opção desejada: \033[0;0m"))
+    opcao = int(input("\033[32mInforme a opção desejada: \033[0;0m"))
 
     if opcao == 1:
-        print("\033[44m\033[37m\n--- Digite os dados do contato ---\n\033[0;0m")
+        print("\n\033[47m\033[30m--- Digite os dados do contato ---\033[0;0m\n")
 
         n = input("Nome: ")
         t = input("Telefone: ")
@@ -128,50 +128,50 @@ Em relação aos contatos do sistema, você deseja...
         i = int(input("Id: "))
 
         if n == "":
-            print("\033[44m\033[37m\nEspaço vazio! Digite um nome...\033[0;0m")
+            print("\n\033[47m\033[30mEspaço vazio! Digite um nome...\033[0;0m")
 
         if t == "":
-            print("\033[44m\033[37m\nEspaço vazio! Digite um login...\033[0;0m")
+            print("\n\033[47m\033[30mEspaço vazio! Digite um login...\033[0;0m")
 
         if e == "":
-            print("\033[44m\033[37m\nEspaço vazio! Digite um senha...\033[0;0m")
+            print("\n\033[47m\033[30mEspaço vazio! Digite um senha...\033[0;0m")
 
-        print("\n\033[44m\033[37m--- Contato inserido com sucesso ---\033[0;0m\n")
+        print("\n\033[47m\033[30m--- Contato inserido com sucesso ---\033[0;0m\n")
 
         inserir_contato(conexao, n, t, e, i)
 
     elif opcao == 2:
-        print("\n\033[44m\033[37m--- Buscar Registro ---\033[0;0m\n")
+        print("\n\033[47m\033[30m--- Buscar Registro ---\033[0;0m\n")
 
         nome = input("Digite o nome do contato: ")
-        print("\033[44m\033[37m\n--- Registros Encontrados ---\n\033[0;0m")
+        print("\n\033[47m\033[30m--- Registros Encontrados ---\033[0;0m\n")
         buscar_contato(conexao, nome)
 
 
     elif opcao == 3:
-        print("\033[44m\033[37m\n--- Lista de contatos cadastrados ---\n\033[0;0m")
+        print("\n\033[47m\033[30m--- Lista de contatos cadastrados ---\033[0;0m\n")
         listar_contato(conexao)
 
     elif opcao == 4:
-        print("\n\033[44m\033[37m--- Alteraçao de Contatos ---\033[0;0m\n")
+        print("\n\033[47m\033[30m--- Alteraçao de Contatos ---\033[0;0m\n")
 
         n = input("Nome: ")
         t = input("Telefone: ")
         e = input("Email: ")
         i = int(input("Id: "))
         alterar_contato(conexao, n, t, e, i)
-        print("\n\033[44m\033[37m--- Alteração realizada com sucesso ---\033[0;0m\n")
+        print("\n\033[47m\033[30m--- Alteração realizada com sucesso ---\033[0;0m\n")
 
     elif opcao == 5:
-        print("\n\033[44m\033[37m--- Exclusão de Registro ---\033[0;0m\n")
+        print("\n\033[47m\033[30m--- Exclusão de Registro ---\033[0;0m\n")
 
         id = input("Digite o ID para do contato para excluir: ")
         excluir_contato(conexao, id)
-        print("\033[44m\033[37m\n--- Contato excluido com sucesso ---\033[0;0m")
+        print("\n\033[47m\033[30m--- Contato excluido com sucesso ---\033[0;0m")
 
     elif opcao == 6:
-        print("\033[44m\033[37m\n--- Voltando ----\n\033[0;0m")
+        print("\n\033[47m\033[30m--- Voltando ----\033[0;0m\n")
         menuUsuario()
 
-print("\033[41m\033[37m\nFechando conexão com o banco...\033[0;0m")
+print("\n\033[47m\033[31mFechando conexão com o banco...\033[0;0m\n")
 conexao.close()
