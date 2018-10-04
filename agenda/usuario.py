@@ -95,7 +95,20 @@ def alterar_usuario(conexao, nome, login, senha, id):
     cursor.execute(sql)
 
     conexao.commit()
+
 # ----------------------------------------------------------------------------------------------------------------
+
+def login(conexao, nome, senha):
+
+    cursor = conexao.cursor()
+
+    sql = "SELECT rowid, * FROM usuario WHERE nome LIKE '{}' AND senha LIKE '{}';".format(nome, senha)
+
+    cursor.execute(sql)
+
+    usuario = cursor.fetchall()
+
+    return usuario
 
 # --- Menu Principal do Programa ---
 
