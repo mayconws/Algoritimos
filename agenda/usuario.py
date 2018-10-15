@@ -1,4 +1,5 @@
 import sqlite3
+from contatos import *
 
 # ---  Funções do Programa ---
 
@@ -98,17 +99,27 @@ def alterar_usuario(conexao, nome, login, senha, id):
 
 # ----------------------------------------------------------------------------------------------------------------
 
-def login(conexao, nome, senha):
+#  --- Função 7: Login Menu Agenda ---
+def login(conexao, login, senha):
 
     cursor = conexao.cursor()
 
-    sql = "SELECT rowid, * FROM usuario WHERE nome LIKE '{}' AND senha LIKE '{}';".format(nome, senha)
+    sql = "SELECT rowid, * FROM usuario WHERE login LIKE '{}' AND senha LIKE '{}';".format(login, senha)
 
     cursor.execute(sql)
 
     usuario = cursor.fetchall()
 
-    return usuario
+    if usuario:
+        for usr in usuario:
+            print( "\n\033[47m\033[34m--- Bem Vindo! --- {} ---\033[0;0m\n".format(usr[1]))
+            return menuContatos()
+
+    else:
+        print("\n\033[47m\033[30m--- Usuário inválido! ---\033[0;0m\n")
+        print("\033[47m\033[30m--- Retornando para o Menu Agenda ---\033[0;0m\n")
+        return
+# -----------------------------------------------------------------------------------------------------------------
 
 # --- Menu Principal do Programa ---
 
@@ -134,18 +145,27 @@ Em relação aos usuários do sistema, você deseja...
         if opcao == 1:
             print("\n\033[47m\033[30m\--- Digite os dados do usuário ---\033[0;0m\n")
 
-            n = input("Nome: ")
-            l = input("Login: ")
-            s = input("Senha: ")
+            while True:
+                n = input("Nome: ")
+                if n == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um nome...\033[0;0m\n")
+                else:
+                    break
 
-            if n == "":
-                print("\n\033[47m\033[30mEspaço vazio! Digite um nome...\033[0;0m\n")
+            while True:
+                l = input("Login: ")
+                if l == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um login...\033[0;0m\n")
+                else:
+                    break
 
-            if l == "":
-                print("\n\033[47m\033[30mEspaço vazio! Digite um login...\033[0;0m\n")
+            while True:
+                s = input("Senha: ")
+                if s == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um senha...\033[0;0m\n")
+                else:
+                    break
 
-            if s == "":
-                print("\n\033[47m\033[30mEspaço vazio! Digite um senha...\033[0;0m\n")
             print("\n\033[47m\033[30m--- Contato inserido com sucesso ---\033[0;0m\n")
 
             inserir_usuario(conexao, n, l, s)

@@ -107,34 +107,48 @@ def menuContatos():
     opcao = 0
     while opcao != 6:
         print("""\033[32m
-    Em relação aos contatos do sistema, você deseja...
+Em relação aos contatos do sistema, você deseja...
 
         1 - Inserir
         2 - Buscar
         3 - Listar
         4 - Alterar
         5 - Excluir
-        6 - Voltar
-    \033[0;0m""")
+        6 - Retornar
+\033[0;0m""")
 
         opcao = int(input("\033[32mInforme a opção desejada: \033[0;0m"))
 
         if opcao == 1:
             print("\n\033[47m\033[30m--- Digite os dados do contato ---\033[0;0m\n")
 
-            n = input("Nome: ")
-            t = input("Telefone: ")
-            e = input("E-mail: ")
-            i = int(input("Id: "))
+            while True:
+                n = input("Nome: ")
+                if n == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um nome...\033[0;0m")
+                else:
+                    break
 
-            if n == "":
-                print("\n\033[47m\033[30mEspaço vazio! Digite um nome...\033[0;0m")
+            while True:
+                t = input("Telefone: ")
+                if t == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um telefone...\033[0;0m")
+                else:
+                    break
 
-            if t == "":
-                print("\n\033[47m\033[30mEspaço vazio! Digite um login...\033[0;0m")
+            while True:
+                e = input("E-mail: ")
+                if e == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um endereço de e-mail...\033[0;0m")
+                else:
+                    break
 
-            if e == "":
-                print("\n\033[47m\033[30mEspaço vazio! Digite um senha...\033[0;0m")
+            while True:
+                i = int(input("Id: "))
+                if i == "":
+                    print("\n\033[47m\033[30mEspaço vazio! Digite um Id...\033[0;0m")
+                else:
+                    break
 
             print("\n\033[47m\033[30m--- Contato inserido com sucesso ---\033[0;0m\n")
 
@@ -146,7 +160,6 @@ def menuContatos():
             nome = input("Digite o nome do contato: ")
             print("\n\033[47m\033[30m--- Registros Encontrados ---\033[0;0m\n")
             buscar_contato(conexao, nome)
-
 
         elif opcao == 3:
             print("\n\033[47m\033[30m--- Lista de contatos cadastrados ---\033[0;0m\n")
@@ -170,8 +183,8 @@ def menuContatos():
             print("\n\033[47m\033[30m--- Contato excluido com sucesso ---\033[0;0m")
 
         elif opcao == 6:
-            print("\n\033[47m\033[30m--- Voltando ----\033[0;0m\n")
-            menuUsuario()
+            print("\n\033[47m\033[30m--- Retornando para o Menu Agenda ----\033[0;0m\n")
+            return 
 
     print("\n\033[47m\033[31mFechando conexão com o banco...\033[0;0m\n")
     conexao.close()
