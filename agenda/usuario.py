@@ -70,7 +70,7 @@ def excluir_usuario(conexao, id):
 # ---------------------------------------------------------------
 
 # --- Função 5: Buscar Usuários ---
-def buscar_usuario(conexao, nome ):
+def buscar_usuario(conexao, nome):
 
     cursor = conexao.cursor()
 
@@ -96,7 +96,6 @@ def alterar_usuario(conexao, nome, login, senha, id):
     cursor.execute(sql)
 
     conexao.commit()
-
 # ----------------------------------------------------------------------------------------------------------------
 
 #  --- Função 7: Login Menu Agenda ---
@@ -117,7 +116,7 @@ def login(conexao, login, senha):
 
     else:
         print("\n\033[47m\033[30m--- Usuário inválido! ---\033[0;0m\n")
-        print("\033[47m\033[30m--- Retornando para o Menu Agenda ---\033[0;0m\n")
+        print("\033[47m\033[30m--- Tente Novamente! ---\033[0;0m\n")
         return
 # -----------------------------------------------------------------------------------------------------------------
 

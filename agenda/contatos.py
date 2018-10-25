@@ -184,7 +184,7 @@ Em relação aos contatos do sistema, você deseja...
 
         elif opcao == 6:
             print("\n\033[47m\033[30m--- Retornando para o Menu Agenda ----\033[0;0m\n")
-            return 
+            return
 
     print("\n\033[47m\033[31mFechando conexão com o banco...\033[0;0m\n")
     conexao.close()
